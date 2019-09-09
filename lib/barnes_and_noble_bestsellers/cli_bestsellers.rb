@@ -1,16 +1,11 @@
 class CLI
-
-  @@scrape = true
   
-  def run
-    
-    while @@scrape
-      puts "Welcome to the Barnes and Noble Bestsellers Scraper!"
-      puts ""
-      puts "Select a book by number to view more details."
-      Scraper.scrape_books
-      menu
-    end
+  def run  
+    puts "Welcome to the Barnes and Noble Bestsellers Scraper!"
+    puts ""
+    puts "Select a book by number to view more details."
+    Scraper.scrape_books
+    menu
   end
 
   def menu
@@ -33,7 +28,6 @@ class CLI
       continue?
     else
       book = Book.all[input.to_i - 1]
-    #binding.pry
       puts ""
       puts "###############"
       puts ""
@@ -65,8 +59,7 @@ class CLI
         menu
       end
       if answer == 'no' || answer == 'n'
-        #@@scrape = false
-        false
+        exit
       else
         continue?
       end
