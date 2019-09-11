@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # gets html from Barnes & Noble
-# creates a new Book for each book in the bestseller list
+# creates a new Book object for each book in the bestseller list
 class Scraper
   @bn_url = 'https://www.barnesandnoble.com/'
 
