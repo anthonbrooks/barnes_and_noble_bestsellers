@@ -1,9 +1,11 @@
 class CLI
   
-  def run  
+  def run
+    puts ""
     puts "Welcome to the Barnes and Noble Bestsellers Scraper!"
     puts ""
     puts "Select a book by number to view more details."
+    puts ""
     Scraper.scrape_books
     menu
   end
@@ -13,6 +15,7 @@ class CLI
       puts "#{index + 1}. #{book.title}"
     end
 
+    puts ""
     puts "Please select a book by number to view more information"
 
     input = gets.chomp
