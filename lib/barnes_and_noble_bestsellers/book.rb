@@ -1,7 +1,13 @@
-# This class gives a new book its attributes and adds each new book to a list of all books
+# frozen_string_literal: true
+
+# This class gives a new book its attributes
+# and adds each new book to a list of all books
 class Book
-  attr_accessor :title, :author, :publish_date, :review_count, :rating, :format, :bn_price, :og_price, :discount, :availability
+  attr_accessor :title, :author, :publish_date, :review_count,\
+                :rating, :format, :bn_price,\
+                :og_price, :discount, :availability
   @@all = []
+
   def initialize(title, author, publish_date, review_count, rating, format, bn_price, og_price, discount, availability)
     @title = title
     @author = author

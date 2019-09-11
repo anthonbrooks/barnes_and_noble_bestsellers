@@ -21,7 +21,7 @@ class CLI
       puts ""
       puts "###############"
       puts ""
-      puts "That is an invalid number"
+      puts "Input invalid"
       puts ""
       puts "###############"
       puts ""
@@ -32,7 +32,7 @@ class CLI
       puts "###############"
       puts ""
       puts "Book Title: #{book.title}"
-      puts "Author: #{book.author}"
+      puts "Author(s): #{book.author}"
       puts "Publication Date: #{book.publish_date}"
       puts "Review Count: #{book.review_count}"
       puts "#{book.rating}"
@@ -57,8 +57,7 @@ class CLI
     while true
       if answer == 'yes' || answer == 'y'
         menu
-      end
-      if answer == 'no' || answer == 'n'
+      elsif answer == 'no' || answer == 'n'
         exit
       else
         continue?

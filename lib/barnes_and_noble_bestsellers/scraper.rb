@@ -10,7 +10,6 @@ class Scraper
 
     doc.css('.pb-s.mt-m.bd-bottom-disabled-gray.record').each do |book|
       
-
       title = book.css('h3 a').text.strip
       author = book.css('.product-shelf-author.contributors a').text.strip
       publish_date = book.css('span.text--small.publ-date').text.strip
