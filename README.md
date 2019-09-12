@@ -1,8 +1,6 @@
-# BarnesAndNobleBestsellers
+# Barnes And Noble Bestsellers
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/barnes_and_noble_bestsellers`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The Barnes and Noble Bestsellers gem is a command line interface app that allows users to browse BarnesandNoble.com and view the top 20 bestselling books. Users can choose a book title that catches their eye and view more details about the title. 
 
 ## Installation
 
@@ -22,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+When a user runs barnes_and_noble_bestsellers gem, they are presented with a welcome message and a numbered list of books. The user is also prompted to select a book by number to view more information about the book.
+
+Once a user selects a book, the details are printed to the screen and the user is once again prompted. This time the prompt will ask if the user would like to continue or exit, the user could type 'yes' to continue or 'no' to exit the program.
+
+If the user inputs 'yes' the numbered list of books will be reprinted to the screen and they can select another book. If the user inputs 'no' at the prompt, the program will end and greet the user with a goodbye message. 
 
 ## Development
 
@@ -32,7 +34,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/barnes_and_noble_bestsellers. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/anthonbrooks/barnes_and_noble_bestsellers. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
