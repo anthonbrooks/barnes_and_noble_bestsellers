@@ -7,7 +7,7 @@ require 'barnes_and_noble_bestsellers/version'
 Gem::Specification.new do |spec|
   spec.name          = 'barnes_and_noble_bestsellers'
   spec.version       = BarnesAndNobleBestsellers::VERSION
-  spec.authors       = ['Anthony']
+  spec.authors       = ['Anthony Prescott-Brooks']
   spec.email         = ['anthonybrooks226@gmail.com']
 
   spec.summary       = 'Gems'
