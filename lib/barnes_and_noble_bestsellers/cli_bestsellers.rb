@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-# creates the main interface for running the program
-# also logic to use the program effectively
+# CLI for running the program
 class CLI
   def run
     puts ''
@@ -52,13 +51,18 @@ class CLI
 
   def completed
     puts "\nWould you like to continue? (y/n)"
-    answer = gets.chomp
+    answer = gets.chomp.downcase
     if %w[yes y].include?(answer)
       menu
     elsif %w[no n].include?(answer)
+      goodbye
       exit
     else
       completed
     end
+  end
+
+  def goodbye
+    puts "\nGoodbye. I hope you found an interesting book."
   end
 end
