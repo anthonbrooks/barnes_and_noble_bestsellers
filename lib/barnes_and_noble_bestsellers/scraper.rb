@@ -22,10 +22,13 @@ class Scraper
       discount = book.css('p.discount').text.strip
       availability = book.css('div.availability-spacing').text.strip
 
-      Book.new(title, author, publish_date,\
-               review_count, rating, format,\
-               bn_price, og_price, discount,\
-               availability)
+      book_attributes = { title: title, author: author,\
+                          publish_date: publish_date, review_count: review_count,\
+                          rating: rating, format: format,\
+                          bn_price: bn_price, og_price: og_price,\
+                          discount: discount, availability: availability }
+
+      Book.new(book_attributes)
     end
   end
 end
