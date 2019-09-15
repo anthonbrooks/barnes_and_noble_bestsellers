@@ -17,16 +17,13 @@ class CLI
       puts "#{index + 1}. #{book.title}"
     end
 
-    puts ''
-    puts 'Please select a book by number to view more information'
+    puts "\nPlease select a book by number to view more information"
 
     @input = gets.chomp
-    puts ''
-    puts '###############'
+    puts "\n###############"
     puts ''
     check_input
-    puts ''
-    puts '###############'
+    puts "\n###############"
     puts ''
     completed
   end
@@ -56,7 +53,6 @@ class CLI
       menu
     elsif %w[no n].include?(answer)
       goodbye
-      exit
     else
       completed
     end
@@ -64,5 +60,6 @@ class CLI
 
   def goodbye
     puts "\nGoodbye. I hope you found an interesting book."
+    exit
   end
 end
